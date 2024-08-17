@@ -1,0 +1,27 @@
+version: '3.2'
+
+services:
+  sid-umag-estudiante-encuesta-docente:
+    container_name: SID-UMAG-ESTUDIANTE-ENCUESTA-DOCENTE
+    build:
+      context: .
+      dockerfile: Dockerfile
+    env_file:
+      - .env
+    expose:
+      - 8100
+    networks:
+      - umag_network
+    restart: always
+    labels:
+      - "traefik.enable=true"
+      - "traefik.http.routers.sid_umag_encuesta_docente_backend.rule=Host(`sid3-back.test-citiaps.cl`) && (PathPrefix(`/api/v1/encuestaDocenteRespuestas`) || PathPrefix(`/encuestaDocenteRespuestas/swagger`))"
+      - "traefik.http.routers.sid_umag_encuesta_docente_backend.entrypoints=websecure"
+      - "traefik.http.routers.sid_umag_encuesta_docente_backend.tls=true"
+      # - "traefik.http.routers.web.tls.certresolver=letsencrypt"
+      - "traefik.http.services.sid_umag_encuesta_docente_backend.loadbalancer.server.port=8100"
+      - "traefik.http.routers.sid_umag_encuesta_docente_backend.service=sid_umag_encuesta_docente_backend"
+
+networks:
+  umag_network:
+    external: true

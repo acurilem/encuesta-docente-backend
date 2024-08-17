@@ -1,0 +1,9 @@
+
+.idea/
+.env.docker
+.env
+.env.test
+.vscode/
+logs/
+postman/
+main

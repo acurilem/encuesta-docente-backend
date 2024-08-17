@@ -1,0 +1,379 @@
+basePath: /api/v1
+consumes:
+- application/json
+definitions:
+  controller.ErrorResponse:
+    properties:
+      error:
+        type: string
+    type: object
+  controller.PorContestar:
+    properties:
+      porContestar:
+        type: boolean
+    type: object
+  models.AsistenciaAsign:
+    properties:
+      ´idCargaTotal:
+        type: integer
+      ´porcentaje:
+        type: integer
+    type: object
+  models.CargaTotalProfesor:
+    properties:
+      idCargaTotalProfesor:
+        type: integer
+      nombreCompleto:
+        type: string
+    type: object
+  models.Contestada:
+    properties:
+      ´flag:
+        type: integer
+      ´idCargaTotal:
+        type: integer
+    type: object
+  models.EncuestaDocenteRespuestas:
+    properties:
+      ano:
+        type: integer
+      comentario:
+        type: string
+      id:
+        type: integer
+      idCargaTotalProfesor:
+        type: integer
+      nota:
+        type: integer
+      p1:
+        type: integer
+      p2:
+        type: integer
+      p3:
+        type: integer
+      p4:
+        type: integer
+      p5:
+        type: integer
+      p6:
+        type: integer
+      p7:
+        type: integer
+      p8:
+        type: integer
+      sem:
+        type: integer
+    type: object
+  models.IndexAlumno:
+    properties:
+      anoIngreso:
+        type: integer
+      anoProcesoNum:
+        type: integer
+      asignaturasInscritas:
+        items:
+          $ref: '#/definitions/models.SeccionesInscritasAlumno'
+        type: array
+      asistenciaAsignaturas:
+        items:
+          $ref: '#/definitions/models.AsistenciaAsign'
+        type: array
+      contestadas:
+        items:
+          $ref: '#/definitions/models.Contestada'
+        type: array
+      infoPlan:
+        items:
+          $ref: '#/definitions/models.PlanAlumnoActual'
+        type: array
+      nivelContesta:
+        type: integer
+      planAlumno:
+        items:
+          $ref: '#/definitions/models.PlanAlumnoAno'
+        type: array
+      profesorSeleccionado:
+        items:
+          $ref: '#/definitions/models.ProfesorSeleccionado'
+        type: array
+      profesores:
+        items:
+          $ref: '#/definitions/models.ProfesoresResumen'
+        type: array
+    type: object
+  models.PlanAlumnoActual:
+    properties:
+      anoIngreso:
+        type: integer
+      anoMatricula:
+        type: integer
+      anoProceso:
+        type: integer
+      anoplan:
+        type: integer
+      codCarrera:
+        type: string
+      codEspecialidad:
+        type: integer
+      codEstadoFinal:
+        type: integer
+      codMencion:
+        type: integer
+      codNivelCarrera:
+        type: integer
+      codNivelGlobal:
+        type: integer
+      codTipoMatricula:
+        type: integer
+      codTipoPlan:
+        type: integer
+      descripcion:
+        type: string
+      idMatricula:
+        type: integer
+      idPlanes:
+        type: integer
+      nomCarrera:
+        type: string
+      nomCentro:
+        type: string
+      nomEspecialidad:
+        type: string
+      nomMencion:
+        type: string
+      semEstadoFinal:
+        type: integer
+    type: object
+  models.PlanAlumnoAno:
+    properties:
+      anoIngreso:
+        type: integer
+      anoMatricula:
+        type: integer
+      anoPrimerIngreso:
+        type: integer
+      anoProceso:
+        type: integer
+      anoplan:
+        type: integer
+      caracteristica:
+        type: string
+      codEstadoFinal:
+        type: integer
+      codEstadoRetiro:
+        type: integer
+      codJornada:
+        type: integer
+      codModalidad:
+        type: integer
+      codModoIngreso:
+        type: integer
+      codNivelCarrera:
+        type: integer
+      codNivelGlobal:
+        type: integer
+      codPersona:
+        type: integer
+      codRegimen:
+        type: integer
+      codTipoAlumMatr:
+        type: integer
+      codTipoAlumno:
+        type: integer
+      codTipoMatricula:
+        type: integer
+      codTipoPlan:
+        type: integer
+      codTipoPrueba:
+        type: integer
+      duracion:
+        type: integer
+      fechaMatricula:
+        type: string
+      idCarreraTotal:
+        type: integer
+      idFichaTesoreria:
+        type: integer
+      idHojaRuta:
+        type: integer
+      idMatricula:
+        type: integer
+      idMatriculaColegio:
+        type: integer
+      idPlanes:
+        type: integer
+      idPrueba:
+        type: integer
+      posicion:
+        type: integer
+      rutAlum:
+        type: string
+      semDesvinculacion:
+        type: integer
+      semEstadoFinal:
+        type: integer
+      vigencia:
+        type: integer
+    type: object
+  models.ProfesorSeleccionado:
+    properties:
+      ´idCargaTotal:
+        type: integer
+      ´nombre:
+        type: string
+    type: object
+  models.ProfesoresResumen:
+    properties:
+      cargaTotalProfesor:
+        items:
+          $ref: '#/definitions/models.CargaTotalProfesor'
+        type: array
+      idCargaTotalProfesor:
+        type: integer
+    type: object
+  models.SeccionesInscritasAlumno:
+    properties:
+      HCP:
+        type: number
+      ambito:
+        type: integer
+      ano:
+        type: integer
+      cantidadEstimadaAlum:
+        type: integer
+      codCategoria:
+        type: integer
+      codEstadoInscripcion:
+        type: integer
+      codPersona:
+        type: integer
+      codTipoSeccion:
+        type: integer
+      fechaIngreso:
+        type: string
+      idCargaParcial:
+        type: integer
+      idCargaTotal:
+        type: integer
+      idDetalleCategoria:
+        type: integer
+      idMalla:
+        type: integer
+      idMallaCd:
+        type: integer
+      idTipoUsuario:
+        type: integer
+      idUsuarioAula:
+        type: integer
+      login:
+        type: string
+      nomGrupo:
+        type: string
+      numGrupos:
+        type: integer
+      opcion:
+        type: integer
+      sem:
+        type: integer
+    type: object
+host: localhost:8080
+info:
+  contact:
+    email: citiaps@usach.cl
+    name: CITIAPS
+    url: https://citiaps.cl
+  description: Módulo que incluye el apartado para la selección, desarrollo y envío
+    de una encuesta docente de un alumno a un profesor.
+  license:
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: http://swagger.io/terms/
+  title: Encuesta docente
+  version: "1.0"
+paths:
+  /encuestaDocenteRespuestas:
+    post:
+      consumes:
+      - application/json
+      description: Esta funcionalidad recibe un body con los datos del profesor y
+        los puntajes de la encuesta asignados por el alumno, son guardados en la BD
+        y se deja registro de que la encuesta ya fue contestada, además se deja rastro
+        de estos Create.
+      parameters:
+      - description: Datos de la encuesta respondida por el alumno
+        in: body
+        name: data
+        required: true
+        schema:
+          $ref: '#/definitions/models.EncuestaDocenteRespuestas'
+      responses:
+        "201":
+          description: Created
+          schema:
+            $ref: '#/definitions/models.EncuestaDocenteRespuestas'
+        "400":
+          description: Petición erronea
+          schema:
+            $ref: '#/definitions/controller.ErrorResponse'
+      security:
+      - Bearer: []
+      summary: Guarda las respuestas de una encuesta de un alumno hacia un profesor.
+      tags:
+      - EncuestaDocenteRespuestas
+  /encuestaDocenteRespuestas/indexAlumno:
+    get:
+      consumes:
+      - application/json
+      description: Esta funcionalidad obtiene de la base de datos el año y semestre
+        actual, luego con el codPersona se obtienen los datos del alumno y sus asignaturas,
+        luego con el idCargaTotal, se obtienen los profesores y si las encuestas ya
+        fueron contestadas.
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/models.IndexAlumno'
+        "400":
+          description: Petición erronea
+          schema:
+            $ref: '#/definitions/controller.ErrorResponse'
+      security:
+      - Bearer: []
+      summary: Obtiene información del alumno, las asignaturas cursadas en el actual
+        semestre y año, y los profesores de cada asignatura.
+      tags:
+      - IndexAlumno
+  /encuestaDocenteRespuestas/porContestar:
+    get:
+      consumes:
+      - application/json
+      description: Esta funcionalidad obtiene de la base de datos el año y semestre
+        actual, luego con el codPersona y el semestre directamente anterior se obtienen
+        las encuestas docentes que faltan por contestar, si se obtiene 1 o más, se
+        retorna un true, en caso contrario un false.
+      responses:
+        "200":
+          description: OK
+          schema:
+            $ref: '#/definitions/controller.PorContestar'
+        "400":
+          description: Petición erronea
+          schema:
+            $ref: '#/definitions/controller.ErrorResponse'
+      security:
+      - Bearer: []
+      summary: Obtiene información del alumno, el actual semestre y año actual, y
+        retorna un bool indicando si tiene encuestas docentes por contestar.
+      tags:
+      - ConfirmacionEncuestasPorContestarRespuestas
+produces:
+- application/json
+schemes:
+- http
+- https
+securityDefinitions:
+  Bearer:
+    description: BearerJWTToken in Authorization Header
+    in: header
+    name: Authorization
+    type: apiKey
+swagger: "2.0"
