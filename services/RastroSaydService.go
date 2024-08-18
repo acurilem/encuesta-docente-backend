@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/config"
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/models"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/config"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
 )
 
 // Función para crear un RastroSayd en la base de datos

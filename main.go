@@ -8,10 +8,10 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/docs"
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/middleware"
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/routes"
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/utils"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/docs"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/middleware"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/routes"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/utils"
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 

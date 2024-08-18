@@ -1,4 +1,4 @@
-module github.com/citiaps/SID-UMAG-Encuesta-docente-backend
+module github.com/acurilem/SID-UMAG-Encuesta-docente-backend
 
 go 1.20
 

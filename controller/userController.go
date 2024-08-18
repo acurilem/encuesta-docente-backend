@@ -4,7 +4,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/citiaps/SID-UMAG-Encuesta-docente-backend/services"
+	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/services"
 
 	"github.com/gin-gonic/gin"
 )
