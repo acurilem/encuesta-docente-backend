@@ -9,7 +9,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
+	"github.com/acurilem/encuesta-docente-backend/models"
 
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"

@@ -1,8 +1,8 @@
 package services
 
 import (
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/config"
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
+	"github.com/acurilem/encuesta-docente-backend/config"
+	"github.com/acurilem/encuesta-docente-backend/models"
 )
 
 // Función que va a buscar la info de un usuario desde vista_persona

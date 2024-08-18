@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/controller"
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/middleware"
+	"github.com/acurilem/encuesta-docente-backend/controller"
+	"github.com/acurilem/encuesta-docente-backend/middleware"
 
 	"github.com/gin-gonic/gin"
 )

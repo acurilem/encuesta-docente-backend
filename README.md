@@ -4,7 +4,7 @@
 
 ### Cambiar nombre paquete
 
-Lo primero a realizar es cambiar el nombre del paquete de go para comenzar a trabajar. El nombre actual del paquete es `github.com/acurilem/SID-UMAG-Encuesta-docente-backend`. Lo que se debe hacer entonces, es cabiar el nombre al nombre del repositorio en github en donde va a residir el proyecto.
+Lo primero a realizar es cambiar el nombre del paquete de go para comenzar a trabajar. El nombre actual del paquete es `github.com/acurilem/encuesta-docente-backend`. Lo que se debe hacer entonces, es cabiar el nombre al nombre del repositorio en github en donde va a residir el proyecto.
 
 ### Variables de entorno
 
@@ -79,14 +79,14 @@ Se necesitan hacer tres imports en el código donde se ejecuta la función `main
 
 ```go
 import (
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/docs"
+	"github.com/acurilem/encuesta-docente-backend/docs"
 
 	swaggerFiles "github.com/swaggo/files"
 	ginSwagger "github.com/swaggo/gin-swagger"
 )
 ```
 
-Nota: En este caso se usa `github.com/acurilem/SID-UMAG-Encuesta-docente-backend` como nombre de paquete, pero esto varia según repositorio/proyecto.
+Nota: En este caso se usa `github.com/acurilem/encuesta-docente-backend` como nombre de paquete, pero esto varia según repositorio/proyecto.
 
 Se importa entonces en primera instancia el paquete `docs` que creó swag al correr `swag init`. Luego, `swaggerFiles` swagger embed files. Y por último el `ginSwagger`, paquete que wrapea el handler del paquete original de swagger, `swaggo`.
 

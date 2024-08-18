@@ -4,8 +4,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/services"
+	"github.com/acurilem/encuesta-docente-backend/models"
+	"github.com/acurilem/encuesta-docente-backend/services"
 
 	"github.com/gin-gonic/gin"
 )

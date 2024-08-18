@@ -5,8 +5,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/config"
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
+	"github.com/acurilem/encuesta-docente-backend/config"
+	"github.com/acurilem/encuesta-docente-backend/models"
 )
 
 // Guarda las respuestas de la encuesta docente de un alumno y deja rastro de ella.

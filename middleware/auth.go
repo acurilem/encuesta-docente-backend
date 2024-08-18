@@ -8,7 +8,7 @@ import (
 	// "sid3-api/services"
 	"time"
 
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/services"
+	"github.com/acurilem/encuesta-docente-backend/services"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"
 	"github.com/tidwall/gjson"

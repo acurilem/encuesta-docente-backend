@@ -5,8 +5,8 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/config"
-	"github.com/acurilem/SID-UMAG-Encuesta-docente-backend/models"
+	"github.com/acurilem/encuesta-docente-backend/config"
+	"github.com/acurilem/encuesta-docente-backend/models"
 )
 
 // Getall de un Año proceso
